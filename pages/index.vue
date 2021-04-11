@@ -6,6 +6,7 @@
       :key="info.id"
       :tittle="info.title"
       :snippet="info.snippet"
+      :cards="info.cards"
     />
   </div>
 </template>

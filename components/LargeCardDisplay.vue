@@ -7,14 +7,22 @@
             {{ snippet }}
         </p>
         <div class="cards-container">
-            la
+            <large-card
+                v-for="cardInfo in cards"
+                :key="cardInfo.id"
+                :tittle="cardInfo.title"
+                :snippet="cardInfo.snippet"
+                :img="cardInfo.image"
+            />
         </div>
     </div>
 </template>
 
 <script>
+import LargeCard from './LargeCard.vue'
     export default {
-        props: [ 'tittle' , 'snippet' ],
+  components: { LargeCard },
+        props: ['tittle' , 'snippet' , 'cards'],
     }
 </script>
 
