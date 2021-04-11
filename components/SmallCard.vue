@@ -1,6 +1,6 @@
 <template>
     <div class="card-container">
-        <img :src="require('@/assets/images/'+img)" alt="" class="image">
+        <img :src="require('@/assets/images/'+img)" alt="fe" class="image">
     </div>
 </template>
 
