@@ -32,7 +32,8 @@
                 </p>
             </div>
         </div>
-        <div v-else class="container padding"> Error: 402
+        <div v-else class="container padding"> 
+            <PageNotFound />
         </div>
     </div>
 </template>
