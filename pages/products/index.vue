@@ -3,18 +3,18 @@
         <Nav />
         <div class="container">
             <large-card-display
-            v-for="largeInfo in largeCardInfo"
-            :key="largeInfo.id"
-            :tittle="largeInfo.title"
-            :snippet="largeInfo.snippet"
-            :cards="largeInfo.cards"
-        />
-        <small-card-display
-            v-for="smallInfo in smallCardInfo"
-            :key="smallInfo.id"
-            :tittle="smallInfo.title"
-            :cards="smallInfo.cards"
-        />
+                v-for="largeInfo in largeCardInfo"
+                :key="largeInfo.id"
+                :tittle="largeInfo.title"
+                :snippet="largeInfo.snippet"
+                :cards="largeInfo.cards"
+            />
+            <small-card-display
+                v-for="smallInfo in smallCardInfo"
+                :key="smallInfo.id"
+                :tittle="smallInfo.title"
+                :cards="smallInfo.cards"
+            />
         </div>
     </div>
 </template>

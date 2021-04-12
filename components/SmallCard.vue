@@ -1,12 +1,12 @@
 <template>
-    <div class="card-container">
+    <NuxtLink :to="'/products/'+id" class="card-container">
         <img :src="require('@/assets/images/'+img)" alt="fe" class="image">
-    </div>
+    </NuxtLink>
 </template>
 
 <script>
     export default {
-        props: ['img'],
+        props: ['img','id'],
     }
 </script>
 

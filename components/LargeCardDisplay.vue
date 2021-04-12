@@ -10,6 +10,7 @@
             <large-card
                 v-for="cardInfo in cards"
                 :key="cardInfo.id"
+                :id="cardInfo.id"
                 :tittle="cardInfo.title"
                 :snippet="cardInfo.snippet"
                 :img="cardInfo.image"

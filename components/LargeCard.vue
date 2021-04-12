@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <NuxtLink :to="`/products/${id}`" class="card">
         <img :src="require('@/assets/images/'+img)" class="image">
         <h3 class="header">
             {{ tittle }}
@@ -7,12 +7,12 @@
         <p class="snippet">
             {{ snippet }}
         </p>
-    </div>
+    </NuxtLink>
 </template>
 
 <script>
     export default {
-        props: ['tittle','snippet','img'],
+        props: ['id','tittle','snippet','img'],
     }
 </script>
 

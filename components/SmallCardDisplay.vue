@@ -7,6 +7,7 @@
             <small-card
                 v-for="imageInfo in cards"
                 :key="imageInfo.id"
+                :id="imageInfo.id"
                 :img="imageInfo.image"
             />
         </div>
