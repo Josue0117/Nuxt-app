@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Nav />
         <div class="container">
             <large-card-display
                 v-for="largeInfo in largeCardInfo"
